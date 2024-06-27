@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+nav img {
+    margin-left: 35px;
+    border-radius: 500px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav-list {
+    width: 50%;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: grey;
+}
+
+.rightnav {
+    /* background-color: aqua; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#Search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    width: 200px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('Sugarcane.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#ffdad5,#fff7f9);
+}
+
+.wrapper h1{
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(255, 0, 82);
+}
+
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card i{
+    margin: 20px;
+    color: #ff5724;
+}
+
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card p{
+    color: #6c757d;
+    text-align: center;
+}
+
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+
+.card:hover h2{
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+
+.card:nth-child(1):hover{
+    background:linear-gradient(45deg, rgba(255,28,8,0.8) 0%, rgba(255,0,82,0.8) 100%),url('Sugarcane.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(2):hover{
+    background:linear-gradient(45deg, rgba(255,28,8,0.8) 0%, rgba(255,0,82,0.8) 100%),url('Sugarcane.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(3):hover{
+    background:linear-gradient(45deg, rgba(255,28,8,0.8) 0%, rgba(255,0,82,0.8) 100%),url('Sugarcane.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(4):hover{
+    background:linear-gradient(45deg, rgba(255,28,8,0.8) 0%, rgba(255,0,82,0.8) 100%),url('Sugarcane.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(5):hover{
+    background:linear-gradient(45deg, rgba(255,28,8,0.8) 0%, rgba(255,0,82,0.8) 100%),url('Sugarcane.jpg');
+    background-size: cover;
+}
+
+.card:nth-child(6):hover{
+    background:linear-gradient(45deg, rgba(255,28,8,0.8) 0%, rgba(255,0,82,0.8) 100%),url('Sugarcane.jpg');
+    background-size: cover;
+}
+
+@media(max-width: 991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}

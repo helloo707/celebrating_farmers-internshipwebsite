@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blog-card {
+  transition: transform 0.5s, box-shadow 0.5s;
+  transform-style: preserve-3d;
+  opacity: 0.8;
+}
+
+.slick-center .blog-card {
+  transform: scale(1.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  opacity: 1;
+}
+
+.slick-slide {
+  transition: opacity 0.5s;
+}
+
+.slick-center {
+  opacity: 1 !important;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: #333;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;  /* Dark background for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4e4e4e; /* Darker grey color for the scrollbar thumb */
+  border-radius: 10px;       /* Rounded edges for the scrollbar thumb */
+  border: 3px solid #1e1e1e; /* Add space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6e6e6e; /* Slightly lighter grey when hovered */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4e4e4e #1e1e1e;
+}
