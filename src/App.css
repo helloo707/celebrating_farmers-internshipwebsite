@@ -51,3 +51,33 @@
     justify-content: center;
     padding: 16px;
   }
+
+  .slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.slider-image {
+  border-radius: 8px;
+}
+
+button.prev, button.next {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

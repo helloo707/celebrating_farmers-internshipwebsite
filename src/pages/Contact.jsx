@@ -1,11 +1,34 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Contact = () => {
+  const formRef = useRef(null);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // You can use fetch or axios to handle the form submission if needed
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: new FormData(formRef.current)
+    }).then(response => {
+      if (response.ok) {
+        // Clear the form after successful submission
+        alert('Message sent successfully!');
+        formRef.current.reset();
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    }).catch(error => {
+      console.error('An error occurred while sending the message:', error);
+      alert('An error occurred. Please try again.');
+    });
+  };
+
   return (
     <div className="min-h-[89vh] flex items-center justify-evenly bg-gradient-to-b from-pink-100 to-orange-50">
       <form
-        action="https://api.web3forms.com/submit"
-        method="POST"
+        ref={formRef}
+        onSubmit={handleSubmit}
         className="flex flex-col items-start gap-5 p-5 rounded-lg max-w-lg w-full"
       >
         <input type="hidden" name="access_key" value="2acf454b-f77b-4688-99bb-32473a20adbb" />
