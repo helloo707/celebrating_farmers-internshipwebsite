@@ -3,56 +3,7 @@
     padding: 0;
     box-sizing: border-box; 
 }
-nav img {
-    margin-left: 35px;
-    border-radius: 500px;
-}
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.nav-list {
-    width: 50%;
-    /* background-color: burlywood; */
-    display: flex;
-    align-items: center;
-}
-
-.nav-list li {
-    list-style: none;
-    padding: 26px 30px;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: white;
-}
-
-.nav-list li a:hover {
-    color: grey;
-}
-
-.rightnav {
-    /* background-color: aqua; */
-    width: 50%;
-    text-align: right;
-    padding: 0 23px;
-}
-
-#Search {
-    padding: 5px;
-    font-size: 17px;
-    border: 2px solid gray;
-    border-radius: 9px;
-    width: 200px;
-}
 
 .background {
     background: rgba(0, 0, 0, 0.7) url('Sugarcane.jpg');

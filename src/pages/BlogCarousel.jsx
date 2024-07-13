@@ -36,11 +36,6 @@ const BlogCarousel = ({ blogs }) => {
           <div key={index} className="px-4">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden p-6">
               <div className="flex items-center mb-4">
-                <img
-                  className="w-16 h-16 rounded-full object-cover"
-                  src={blog.profilePic}
-                  alt={blog.author}
-                />
                 <div className="ml-4">
                   <h3 className="font-bold text-xl">{blog.title}</h3>
                   <p className="text-gray-600">by {blog.author}</p>

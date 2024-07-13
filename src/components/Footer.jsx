@@ -7,7 +7,7 @@ const Footer = () => {
       <footer className="pb-1">
         <div className="container mx-auto px-2 mb-4 ">
           <div className="flex flex-wrap justify-between">
-            <div className="w-full sm:w-1/4 p-2 ml-12">
+            <div className="w-full sm:w-1/4 px-8 md:ml-12">
               <span className="links-head font-bold block mb-2">Features</span>
               <ul className="footer-links list-none p-0">
                 <li className="mb-2"><a href="/products" className="text-black hover:text-blue-800">Business Directory</a></li>
@@ -17,7 +17,7 @@ const Footer = () => {
                 <li className="mb-2"><a href="/about" className="text-black hover:text-blue-800">Director Directory</a></li>
               </ul>
             </div>
-            <div className="w-full sm:w-1/4 p-2">
+            <div className="w-full sm:w-1/4 px-8">
               <span className="links-head font-bold block mb-2">Quick Links</span>
               <ul className="footer-links list-none p-0">
                 <li className="mb-2"><a href="/about" className="text-black hover:text-blue-800">About Us</a></li>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <li className="mb-2"><a href="/contact" className="text-black hover:text-blue-800">Contact Us</a></li>
               </ul>
             </div>
-            <div className="w-full sm:w-1/4 p-2 mr-12">
+            <div className="w-full sm:w-1/4 px-8 mr-12">
               <img src="../../public/Footer.jpg" alt="theCompanyCheck" className="w-12" />
               <div className="clearfix"></div><br />
               <p>We love getting feedback from our customers. Connect with The Company Check on social media today.</p>
